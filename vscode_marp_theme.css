@@ -1,0 +1,199 @@
+/* @theme vscode */
+/*
+VSCode-inspired theme for presentations
+Based on Visual Studio Code Dark+ theme colors
+*/
+
+@import "default";
+@import "schema";
+@import "structure";
+
+:root {
+    --base: #1e1e1e;           /* VSCode editor background */
+    --surface: #252526;        /* VSCode sidebar background */
+    --overlay: #2d2d30;        /* VSCode panel background */
+    --muted: #6a6a6a;          /* VSCode comments */
+    --subtle: #cccccc;         /* VSCode secondary text */
+    --text: #d4d4d4;          /* VSCode main text */
+    --love: #f44747;          /* VSCode error red */
+    --gold: #dcdcaa;          /* VSCode function yellow */
+    --rose: #ce9178;          /* VSCode string orange */
+    --pine: #4fc1ff;          /* VSCode keyword blue */
+    --foam: #4ec9b0;          /* VSCode type teal */
+    --iris: #c586c0;          /* VSCode keyword purple */
+    --highlight-low: #2a2d2e;  /* VSCode selection background */
+    --highlight-muted: #3e3e42; /* VSCode hover background */
+    --highlight-high: #094771;  /* VSCode find highlight */
+
+    font-family: 'Consolas', 'Courier New', monospace, ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+        sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol,
+        "Noto Color Emoji";
+    font-weight: initial;
+
+    background-color: var(--base);
+}
+
+/* Common style */
+h1 {
+    color: var(--pine);        /* VSCode blue for main headings */
+    padding-bottom: 2mm;
+    margin-bottom: 12mm;
+    font-weight: 700;
+}
+h2 {
+    color: var(--foam);        /* VSCode teal for sub-headings */
+    font-weight: 600;
+}
+h3 {
+    color: var(--iris);        /* VSCode purple for smaller headings */
+    font-weight: 600;
+}
+h4 {
+    color: var(--gold);        /* VSCode yellow for h4 */
+    font-weight: 600;
+}
+h5 {
+    color: var(--rose);        /* VSCode orange for h5 */
+    font-weight: 600;
+}
+h6 {
+    color: var(--subtle);      /* Gray for h6 */
+    font-weight: 600;
+}
+a {
+    color: var(--pine);        /* VSCode link blue */
+    text-decoration: underline;
+}
+a:hover {
+    color: var(--foam);        /* Lighter blue on hover */
+}
+p {
+    font-size: 20pt;
+    font-weight: 400;
+    color: var(--text);
+    line-height: 1.4;
+}
+code {
+    color: var(--rose);        /* VSCode inline code color */
+    background-color: var(--highlight-muted);
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: 'Consolas', 'Courier New', monospace;
+}
+text {
+    color: var(--text);
+}
+ul {
+    color: var(--text);
+}
+li {
+    color: var(--text);
+    margin: 0.25em 0;
+}
+img {
+    background-color: var(--highlight-low);
+    border-radius: 4px;
+}
+strong {
+    color: var(--text);
+    font-weight: 700;
+}
+mjx-container {
+    color: var(--text);
+}
+marp-pre {
+    background-color: var(--overlay);
+    border: 1px solid var(--highlight-high);
+    border-radius: 4px;
+}
+
+/* Code block syntax highlighting - VSCode Dark+ theme */
+.hljs-comment {
+    color: #6a9955;           /* VSCode comment green */
+    font-style: italic;
+}
+.hljs-attr {
+    color: #92c5f8;           /* VSCode attribute blue */
+}
+.hljs-punctuation {
+    color: var(--text);       /* VSCode punctuation */
+}
+.hljs-string {
+    color: #ce9178;           /* VSCode string orange */
+}
+.hljs-title {
+    color: #dcdcaa;           /* VSCode function yellow */
+}
+.hljs-keyword {
+    color: #569cd6;           /* VSCode keyword blue */
+    font-weight: 600;
+}
+.hljs-variable {
+    color: #9cdcfe;           /* VSCode variable light blue */
+}
+.hljs-literal {
+    color: #569cd6;           /* VSCode literal blue */
+}
+.hljs-type {
+    color: #4ec9b0;           /* VSCode type teal */
+}
+.hljs-number {
+    color: #b5cea8;           /* VSCode number green */
+}
+.hljs-built_in {
+    color: #4ec9b0;           /* VSCode built-in teal */
+}
+.hljs-params {
+    color: #9cdcfe;           /* VSCode parameter light blue */
+}
+.hljs-symbol {
+    color: var(--foam);
+}
+.hljs-meta {
+    color: #c586c0;           /* VSCode meta purple */
+}
+.hljs-tag {
+    color: #569cd6;           /* VSCode HTML tag blue */
+}
+.hljs-name {
+    color: #569cd6;           /* VSCode tag name blue */
+}
+.hljs-selector-class {
+    color: #d7ba7d;           /* VSCode CSS class yellow */
+}
+.hljs-selector-id {
+    color: #d7ba7d;           /* VSCode CSS ID yellow */
+}
+.hljs-property {
+    color: #9cdcfe;           /* VSCode CSS property light blue */
+}
+
+/* Additional VSCode-like styling */
+blockquote {
+    border-left: 4px solid var(--pine);
+    background-color: var(--highlight-low);
+    padding: 1em;
+    margin: 1em 0;
+    color: var(--subtle);
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid var(--highlight-muted);
+}
+
+th, td {
+    border: 1px solid var(--highlight-muted);
+    padding: 8px 12px;
+    color: var(--text);
+}
+
+th {
+    background-color: var(--surface);
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: var(--highlight-low);
+}
