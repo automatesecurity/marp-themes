@@ -15,6 +15,7 @@ Based on Visual Studio Code Dark+ theme colors
     --muted: #6a6a6a;          /* VSCode comments */
     --subtle: #cccccc;         /* VSCode secondary text */
     --text: #d4d4d4;          /* VSCode main text */
+    --tbltext: #252526;        /* VSCode table text */
     --love: #f44747;          /* VSCode error red */
     --gold: #dcdcaa;          /* VSCode function yellow */
     --rose: #ce9178;          /* VSCode string orange */
@@ -186,7 +187,7 @@ table {
 th, td {
     border: 1px solid var(--highlight-muted);
     padding: 8px 12px;
-    color: var(--text);
+    color: var(--tbltext);
 }
 
 th {
